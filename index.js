@@ -5,7 +5,8 @@ var
   actions = require('./actions')
   ;
 
-
+  process.env.INIT_CWD = process.cwd();
+  
 program
   .version('0.0.1')
   .description('cli for generating code');

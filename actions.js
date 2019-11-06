@@ -46,7 +46,7 @@ function genCode() {
   return new Promise(function (resolve) {
 
     var folderInfo = {};
-    var fldpath = path.join(__dirname, process.env.OutputCodeFolder);
+    var fldpath = path.join(process.env.INIT_CWD, process.env.OutputCodeFolder);
 
     var tblKeys = Object.keys(_microdb.Tables);
     for (var index = 0; index < tblKeys.length; index++) {
@@ -249,7 +249,7 @@ function preRunCheck() {
     msg: ''
   };
 
-  if (!fs.existsSync(path.join(__dirname, 'envVars.txt'))) {
+  if (!fs.existsSync(path.join(process.env.INIT_CWD, 'envVars.txt'))) {
     res.isok = false;
     res.msg = 'missing file envVars.txt';
   }
@@ -266,7 +266,7 @@ function preRunCheck() {
       }
       else {
         res.isok = true;
-        _fldpath = path.join(__dirname, process.env.OutputCodeFolder);
+        _fldpath = path.join(process.env.INIT_CWD, process.env.OutputCodeFolder);
       }
     }
     catch (err) {

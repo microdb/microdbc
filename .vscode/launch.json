@@ -8,14 +8,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "microdb-cli init",
+      "name": "microdbc init",
       "program": "${workspaceFolder}\\bin\\index.js",
       "args": ["init"]
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "microdb-cli gen",
+      "name": "microdbc gen",
       "program": "${workspaceFolder}\\bin\\index.js",
       "args": ["gen"]
     }
