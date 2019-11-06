@@ -6,7 +6,7 @@ Command line utility for generating custom code based on a microdb.co database.
 https://www.microdb.co is data-as-a-service for applications.
 
 ## Install
-    npm install microdbc -g --save-dev
+    npm install microdbc -g 
 
 ## Set API key and output folder
     Create a envVars.txt file with these values. 
