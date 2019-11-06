@@ -209,7 +209,6 @@ function folderCheck() {
     var folderInfo = {};
     try {
       if (!fs.existsSync(_fldpath)) {
-        // fs.rmdirSync(_fldpath);
         fs.mkdirSync(_fldpath);
       }
       folderInfo.success = true;
