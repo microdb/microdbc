@@ -1,6 +1,6 @@
 {
   "name": "microdbc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "bin/index.js",
   "engines": {
@@ -19,6 +19,15 @@
     "url": "https://www.microdb.co"
   },
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microdb/microdbc.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/microdb/microdbc/issues"
+  },
+  "homepage": "https://github.com/microdb/microdbc#readme",
   "dependencies": {
     "commander": "^3.0.2",
     "microdb-api": "^1.0.2",
