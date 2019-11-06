@@ -1,0 +1,28 @@
+{
+  "name": "microdbc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "microdbc": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "MicroDB.co",
+    "email": "support@microdb.co",
+    "url": "https://www.microdb.co"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "commander": "^3.0.2",
+    "microdb-api": "^1.0.2",
+    "node-env-file": "^0.1.8",
+    "request": "^2.88.0"
+  }
+}
