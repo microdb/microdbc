@@ -124,7 +124,7 @@ function genCode() {
       str.append('});');
       str.append('\r\n\r\n');
 
-      str.append('microdb.Tables.' + key + '.saveNew('+key+').then(function (res) {');
+      str.append('microdb.Tables.' + key + '.add('+key+').then(function (res) {');
       str.append('\r\n');
       str.append('\t if(res.success && res.data && res.data.addedRows){');
       str.append('\r\n');
@@ -141,7 +141,7 @@ function genCode() {
       str.append('});');
       str.append('\r\n\r\n');
 
-      str.append('microdb.Tables.' + key + '.saveUpdate('+key+').then(function (res) {');
+      str.append('microdb.Tables.' + key + '.update('+key+').then(function (res) {');
       str.append('\r\n');
       str.append('\t if(res.success && res.data && res.data.updateRows){');
       str.append('\r\n');
@@ -158,7 +158,7 @@ function genCode() {
       str.append('});');
       str.append('\r\n\r\n');
 
-      str.append('microdb.Tables.' + key + '.saveDelete({primarykey:'+key+'.primarykey}).then(function (res) {');
+      str.append('microdb.Tables.' + key + '.delete({primarykey:'+key+'.primarykey}).then(function (res) {');
       str.append('\r\n');
       str.append('\t if(res.success && res.data && res.data.deletedRows){');
       str.append('\r\n');
